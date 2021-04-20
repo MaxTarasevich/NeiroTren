@@ -1,0 +1,10 @@
+mixin list
+  ul
+    li foo
+    li bar
+    li baz
+
+mixin pictureType(src,alt,srcset) 
+    picture 
+        source(srcset=srcset, type="image/webp")
+        img(src=src, alt=alt, loading="lazy")

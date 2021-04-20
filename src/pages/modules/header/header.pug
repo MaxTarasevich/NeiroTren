@@ -1,1 +1,55 @@
-header.header 
+header.header
+    .container
+        nav.nav 
+            ul.menu 
+                li.menu-item
+                    a(href="#") Главная
+                li.menu-item
+                    a(href="#") О компании
+                li.menu-item
+                    a(href="#") Каталог
+                li.menu-item
+                    a(href="#") Покупателям 
+                li.menu-item
+                    a(href="#") Доставка и оплата
+                li.menu-item
+                    a(href="#") Акции
+                li.menu-item
+                    a(href="#") Блог
+                li.menu-item
+                    a(href="#") Контакты
+            .header__icons 
+                a(href="#")
+                    img(src="img/instaIcon.svg", alt="instagram")
+                a(href="#") 
+                    img(src="img/vkIcon.svg", alt="vKontacte")
+                a(href="#") 
+                    img(src="img/watsAppIcon.svg", alt="whatsapp")
+        .header__logo 
+            +pictureType('img/logo2.png','logo','')
+        .header__search 
+            input(type="search", name="search", placeholder="Что вы ищете?")
+            button(type="submit") 
+                img(src="img/search-icon.svg", alt="search")
+        .header__info 
+            a.header__info-tel(href="tel:+3750000000") 8 (800) 55 48 97
+            a.header__info-mail(href="mailto:info@neyro-t.ru") info@neyro-t.ru
+            .header__info-text Время работы: 07:00 - 19:00 по МСК
+        .header__logIcon 
+            a.header__logIcon-logIn(href="#")
+                img(src="img/user.svg", alt="user icon")
+            a.header__logIcon-basket(href="#") 
+                img(src="img/basket.svg", alt="basket icon") 
+        ul.header__catalog 
+            li
+                a(href="#") Мозжечковая стимуляция
+            li
+                a(href="#") Межполушарные доски
+            li
+                a(href="#") Нейрокосички
+            li
+                a(href="#") Балансиры
+            li
+                a(href="#") Нейровосьмерки
+            li
+                a(href="#") Разное
