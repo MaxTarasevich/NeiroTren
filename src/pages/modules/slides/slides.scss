@@ -1,0 +1,87 @@
+.slides{
+    padding-top: 20px;
+    .container{
+       display: flex;
+       flex-wrap: wrap;
+       flex-flow: column wrap;
+       max-height: 550px;
+       align-content: space-between;
+       justify-content: space-between;
+        .slides__item{
+            width: 31.6%;
+            height: 240px;
+            display: flex;
+            padding: 3.7% 2%;
+            background-image: url(../img/slides__bg.png),linear-gradient(99.15deg, #50A6E3 0%, #A7DAFF 101.08%);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size:contain;
+            mix-blend-mode: screen;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            .slides__item-content{
+               width: 71%;
+               .slides__item-title{
+                   @include text-bold-white;
+               }
+               .slides__item-text{
+                   margin-top: 3.5%;
+                   @include text-style-menu;
+                   color: $white;
+               }
+               .slides__item-button{
+                display: inline-block;
+                margin-top: 4.5%;
+                @include text-bold-white;
+                font-size: 16px;
+               }
+            }    
+            .slides__item-img{
+                position: relative;
+                img{
+                    width: 185px;
+                    height: 210px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: -50px;
+                    left: -52px;
+                }
+            }
+        }
+        .slides__item+.slides__item{
+            background-image: url(../img/slides__bg.png),linear-gradient(113.62deg, #2AB86B 0%, #5DE39A 97.37%);
+        }
+        .slides__item:last-of-type{
+            background-image: url(../img/slides__bg.png),linear-gradient(112.82deg, #F68AB1 0%, #FEB5CF 100%);
+        }
+       .slides__item.active{
+            width: 65.8%;
+            height: 512px;
+            padding: 11.5% 5.9%;
+            .slides__item-content{
+                width: 50%;
+            }
+            .slides__item-title{
+                font-weight: 500;
+                font-size: 50px;
+            }
+            .slides__item-text{
+                font-size: 18px;
+            }
+            .slides__item-button{
+                font-size: 16px;
+            }
+            .slides__item-img{
+                position: relative;
+                img{
+                    width: 425px;
+                    height: 500px;
+                    object-fit: cover;
+                    position: absolute;
+                  top:-150px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
